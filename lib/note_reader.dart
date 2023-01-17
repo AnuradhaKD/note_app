@@ -67,8 +67,8 @@ class _NoteReaderScreenState extends State<NoteReaderScreen> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppStyle.accentColor,
         onPressed: () async {
-          FirebaseFirestore.instance.collection("Notes").doc(snapshot.data.docs[index].id).delete();
-            },
+          
+        },
         child: const Icon(Icons.delete),
       ),
     );
